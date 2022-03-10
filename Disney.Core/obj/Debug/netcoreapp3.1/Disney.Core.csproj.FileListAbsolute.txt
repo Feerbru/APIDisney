@@ -1,0 +1,10 @@
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Core/bin/Debug/netcoreapp3.1/Disney.Core.deps.json
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Core/bin/Debug/netcoreapp3.1/Disney.Core.dll
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Core/bin/Debug/netcoreapp3.1/Disney.Core.pdb
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Core/obj/Debug/netcoreapp3.1/Disney.Core.csproj.AssemblyReference.cache
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Core/obj/Debug/netcoreapp3.1/Disney.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Core/obj/Debug/netcoreapp3.1/Disney.Core.AssemblyInfoInputs.cache
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Core/obj/Debug/netcoreapp3.1/Disney.Core.AssemblyInfo.cs
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Core/obj/Debug/netcoreapp3.1/Disney.Core.csproj.CoreCompileInputs.cache
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Core/obj/Debug/netcoreapp3.1/Disney.Core.dll
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Core/obj/Debug/netcoreapp3.1/Disney.Core.pdb

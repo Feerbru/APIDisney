@@ -4,8 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using Disney.Core.DTOs;
-using Disney.Core.DTOs.CharacterDtos;
+using Disney.Core.DTOs.MovieDtos;
 using Disney.Core.Entities;
 using Disney.Core.Interfaces.Repository;
 using Disney.Core.QueryFilters;
@@ -15,67 +14,68 @@ using Microsoft.AspNetCore.Http;
 
 namespace Disney.Infrastructure.Services
 {
-    public class CharacterService : ICharacterService
+    public class MovieService : IMovieService
     {
-        private readonly ICharacterRepository _repository;
+        private readonly IMovieRepository _repository;
         private readonly IStorage _storage;
         private readonly IMapper _mapper;
-
-        public CharacterService(ICharacterRepository repository ,IStorage storage, IMapper mapper)
+        
+        public MovieService(IMovieRepository repository, IStorage storage, IMapper mapper)
         {
             _repository = repository;
             _storage = storage;
             _mapper = mapper;
         }
-        
-        public async Task<IEnumerable<CharacterOutDto>> GetAll(CharacterQueryFilter filter)
+
+        public async Task<IEnumerable<MovieOutDto>> GetAll(MovieQueryFilters filters)
         {
             var entity = await _repository.GetAll();
-            var entityM = await _repository.GetAllInclude("Movies");
 
-            if (filter.Name != null)
+            if (filters.Title != null)
             {
-                entity = entity.Where(x => string.Equals(x.Name, filter.Name, StringComparison.CurrentCultureIgnoreCase));
+                entity = entity.Where(x => string.Equals(x.Title,filters.Title, StringComparison.CurrentCultureIgnoreCase));
             }
 
-            if (filter.Age != null)
+            if (filters.Order != null)
             {
-                entity = entity?.Where(x => x.Age == filter.Age);
-            }
-
-            if (filter.Weight != null)
-            {
-                entity = entity?.Where(x => Equals(x.Weight, filter.Weight));
-            }
-
-            if (filter.IdMovie != null)
-            {
-                
+                if (string.Equals(filters.Order, "ASC", StringComparison.CurrentCultureIgnoreCase))
+                {
+                    entity = entity.OrderBy(x => x.CreatingDate);
+                }
+                else
+                {                
+                    if (filters.Order.ToUpper().Equals("DESC") )
+                    {
+                        entity = entity.OrderByDescending(x => x.CreatingDate);
+                    }
+                }
             }
             
-            return _mapper.Map<IEnumerable<CharacterOutDto>>(entity);
+            
+            return _mapper.Map<IEnumerable<MovieOutDto>>(entity);
         }
-        
-        public async Task<CharacterDto> GetById(int id)
+
+        public async Task<MovieDto> GetById(int id)
         {
             var entity = await _repository.GetByIdAsync(id);
-            return _mapper.Map<CharacterDto>(entity);
+            return _mapper.Map<MovieDto>(entity);
         }
-        
-        public async Task<CharacterDto> Add(CreationCharacterDto characterDto)
+
+        public async Task<MovieDto> Add(CreationMovieDto dto)
         {
-            var entity = _mapper.Map<Character>(characterDto);
+            var entity = _mapper.Map<Movie>(dto);
             if (entity.Image != null)
             {
-                var imageUrl = await ImageSave(characterDto.Image);
-                entity.Image = imageUrl; 
+                var imageUrl = await ImageSave(dto.Image);
+                entity.Image = imageUrl;
             }
 
             var newEntity = await _repository.Add(entity);
-            return _mapper.Map<CharacterDto>(newEntity);
+            return _mapper.Map<MovieDto>(newEntity);
+
         }
-        
-        public async Task Update(int id, CreationCharacterDto dto)
+
+        public async Task Update(int id, CreationMovieDto dto)
         {
             try
             {
@@ -94,6 +94,7 @@ namespace Disney.Infrastructure.Services
                 }
 
                 await _repository.Update(entity);
+
             }
             catch (Exception e)
             {
@@ -101,6 +102,7 @@ namespace Disney.Infrastructure.Services
                 throw;
             }
         }
+
         public async Task Delete(int id)
         {
             await _repository.Delete(id);
@@ -108,7 +110,7 @@ namespace Disney.Infrastructure.Services
         
         private async Task<string> ImageSave(IFormFile image)
         {
-             var stream = new MemoryStream();
+            var stream = new MemoryStream();
 
             await image.CopyToAsync(stream);
 

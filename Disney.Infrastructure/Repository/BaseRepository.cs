@@ -12,14 +12,14 @@ namespace Disney.Infrastructure.Repository
     {
         private readonly ApplicationDbContext _context;
         protected DbSet<T> _entities;
-        
+
         public BaseRepository(ApplicationDbContext context)
         {
             _context = context;
             _entities = context.Set<T>();
         }
         
-        public async Task<IEnumerable<T>> GetAll()
+        public async Task<IEnumerable<T>> GetAll( )
         {
             return await _entities.ToListAsync();
         }

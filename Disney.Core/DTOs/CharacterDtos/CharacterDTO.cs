@@ -1,9 +1,10 @@
+using System;
 using System.Collections.Generic;
 using Disney.Core.Entities;
 
 namespace Disney.Core.DTOs
 {
-    public class CharacterOutDTO
+    public class CharacterDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -11,16 +12,16 @@ namespace Disney.Core.DTOs
         public double Weight { get; set; }
         public string History { get; set; }
         public string Image { get; set; }
-        public ICollection<MovieDto> Movies { get; set; }
+        public ICollection<MovieOutDto> Movies { get; set; }
     }
 
-    public class MovieDto
+    public class MovieOutDto
     {
         public string Title { get; set; }
 
         public string Image { get; set; }
         
-        public int Qualification { get; set; }
+        public DateTime CreatingDate { get; set; }
         
         
     }

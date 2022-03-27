@@ -20,11 +20,13 @@ namespace Disney.Infrastructure
 
             //Services
             services.AddScoped<ICharacterService, CharacterService>();
+            services.AddScoped<IMovieService, MovieService>();
             services.AddSingleton<IStorage, FileStorage>();
             
             //Repository
             services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             services.AddScoped<ICharacterRepository, CharacterRepository>();
+            services.AddScoped<IMovieRepository, MovieRepository>();
             
             //AutoMapper
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

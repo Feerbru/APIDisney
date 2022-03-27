@@ -29,13 +29,5 @@ namespace Disney.Infrastructure.Data
                 return new ApplicationDbContext(optionsBuilder.Options);
             }
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-
-
-            new Movie.Mapping(modelBuilder.Entity<Movie>());
-            base.OnModelCreating(modelBuilder);
-
-        }
     }
 }

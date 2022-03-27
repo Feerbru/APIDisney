@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Disney.Core.Entities;
@@ -17,6 +18,11 @@ namespace Disney.Infrastructure.Repository
         public async Task<Character> GetByIdAsync(int id)
         {
             return await Task.FromResult(_entities.Include("Movies").First(x => x.Id == id));
+        }
+
+        public async Task<IEnumerable<Character>> GetAllInclude(string include)
+        {
+            return await _entities.Include(include).ToListAsync();
         }
     }
 }

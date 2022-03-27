@@ -93,7 +93,7 @@ namespace Disney.Infrastructure.Migrations
                     b.Property<DateTime>("CreatingDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("GenderId")
+                    b.Property<int?>("GenderId")
                         .HasColumnType("int");
 
                     b.Property<string>("Image")
@@ -164,13 +164,14 @@ namespace Disney.Infrastructure.Migrations
 
             modelBuilder.Entity("Disney.Core.Entities.Movie", b =>
                 {
-                    b.HasOne("Disney.Core.Entities.Gender", "Gender")
-                        .WithMany()
-                        .HasForeignKey("GenderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("Disney.Core.Entities.Gender", null)
+                        .WithMany("Movies")
+                        .HasForeignKey("GenderId");
+                });
 
-                    b.Navigation("Gender");
+            modelBuilder.Entity("Disney.Core.Entities.Gender", b =>
+                {
+                    b.Navigation("Movies");
                 });
 #pragma warning restore 612, 618
         }

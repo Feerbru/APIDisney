@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Y5xVbXI5O4E0GymAIYMKQuelrCEKUNQylPM6G4FwWcAjDg7lsH8CQInFcjm83rbD5tRLygNsjMv4R8T/4K5mTA==",
+  "dgSpecHash": "d8mZbpfZGr+lw++li7YhRNPbh9tLcGIrwuaKSzigxUzbJQ9jeAcocBBb9GHfR5y5VcriBf7/sUoGEqCs+IidXg==",
   "success": true,
   "projectFilePath": "/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Api/Disney.Api.csproj",
   "expectedPackageFiles": [
     "/Users/fernandobruzzo/.nuget/packages/automapper/11.0.0/automapper.11.0.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/fernandobruzzo/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/3.1.23/microsoft.aspnetcore.authentication.jwtbearer.3.1.23.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.aspnetcore.http/2.2.2/microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

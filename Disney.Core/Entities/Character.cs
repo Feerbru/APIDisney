@@ -24,5 +24,7 @@ namespace Disney.Core.Entities
         public string Image { get; set; }
 
         public ICollection<Movie> Movies { get; set; }
+        
+        
     }
 }

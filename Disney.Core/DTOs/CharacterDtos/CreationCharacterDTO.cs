@@ -1,8 +1,7 @@
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Http;
 
-namespace Disney.Core.DTOs
+namespace Disney.Core.DTOs.CharacterDtos
 {
     public class CreationCharacterDto
     {

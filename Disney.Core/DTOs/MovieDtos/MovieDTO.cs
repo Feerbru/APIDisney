@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using Disney.Core.Entities;
+using Disney.Core.DTOs.CharacterDtos;
 
-namespace Disney.Core.DTOs
+namespace Disney.Core.DTOs.MovieDtos
 {
-    public class MovieDTO
+    public class MovieDto
     {
         public int Id { get; set; }
 
@@ -16,8 +16,7 @@ namespace Disney.Core.DTOs
 
         public int Qualification { get; set; }
 
-        public ICollection<Character> Characters { get; set; }
+        public ICollection<CharacterOutDto> Characters { get; set; }
 
-        public Gender Gender { get; set; }
     }
 }

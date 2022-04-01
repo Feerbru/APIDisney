@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Disney.Core.Entities
 {
@@ -21,18 +20,11 @@ namespace Disney.Core.Entities
 
         public ICollection<Character> Characters { get; set; }
 
-        public int GenderId { get; set; }
+        public ICollection<Gender> Genders { get; set; }
 
-        public Gender Gender { get; set; }
-
-
-        public class Mapping
+        public Movie()
         {
-            public Mapping(EntityTypeBuilder<Movie> mappingMovie)
-            {
-                mappingMovie.HasKey(x => x.Id);
-                mappingMovie.HasOne(x => x.Gender);
-            }
+            CreatingDate = DateTime.Now;
         }
     }
 }

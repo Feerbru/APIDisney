@@ -29,26 +29,28 @@ namespace Disney.Infrastructure.Services
 
         public async Task<IEnumerable<MovieOutDto>> GetAll(MovieQueryFilters filters)
         {
-            var entity = await _repository.GetAll();
+            var entity = await _repository.GetAllInclude("Genders");
 
             if (filters.Title != null)
             {
-                entity = entity.Where(x => string.Equals(x.Title,filters.Title, StringComparison.CurrentCultureIgnoreCase));
+                entity = entity.Where(x => x.Title!.Contains(filters.Title, StringComparison.CurrentCultureIgnoreCase));
             }
 
             if (filters.Order != null)
             {
                 if (string.Equals(filters.Order, "ASC", StringComparison.CurrentCultureIgnoreCase))
                 {
-                    entity = entity.OrderBy(x => x.CreatingDate);
+                    entity = entity.OrderBy(x => x.CreatingDate).ToList();
                 }
-                else
-                {                
-                    if (filters.Order.ToUpper().Equals("DESC") )
-                    {
-                        entity = entity.OrderByDescending(x => x.CreatingDate);
-                    }
+                if (string.Equals(filters.Order, "DESC", StringComparison.CurrentCultureIgnoreCase) )
+                {
+                    entity = entity.OrderByDescending(x => x.CreatingDate).ToList();
                 }
+            }
+
+            if (filters.GenderId != null)
+            {
+                entity = entity.Where(x => x.Genders.Any(g => Equals(g.Id, filters.GenderId)));
             }
             
             

@@ -9,6 +9,8 @@ namespace Disney.Core.Entities
         [StringLength(50)]
         public string Name { get; set; }
 
+        public string Username { get; set; }
+
         [Required]
         [EmailAddress]
         public string Email { get; set; }

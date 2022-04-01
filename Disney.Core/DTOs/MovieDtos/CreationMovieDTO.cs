@@ -1,25 +1,19 @@
 using System;
-using System.Globalization;
+using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Http;
 
-namespace Disney.Core.DTOs
+namespace Disney.Core.DTOs.MovieDtos
 {
-    public class CreationMovieDTO
+    public class CreationMovieDto
     {
-        public CreationMovieDTO()
-        {
-            this.CreatingDate = DateTime.Now.ToString(CultureInfo.InvariantCulture);
-        }
-
+        [Required]
         public string Title { get; set; }
 
         public IFormFile Image { get; set; }
 
-        public string CreatingDate { get; }
-
+        [Required]
+        [RegularExpression("(^[0-9]+$)", ErrorMessage = "Solo se permiten números")]
         public int Qualification { get; set; }
         
-        
-
     }
 }

@@ -36,6 +36,21 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.23": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Http/2.2.2": {
         "type": "package",
         "dependencies": {
@@ -1707,6 +1722,21 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.23": {
+      "sha512": "UkSDF8efuP/ZbvKjtWaTCoMq5vHW/+2OHaPEY1sGC8dYkl3elmUTsvizQcv95QozzLK0RRnT01JZNgNAG9wlSg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.3.1.23.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Http/2.2.2": {
@@ -5966,6 +5996,7 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "Disney.Core >= 1.0.0",
       "Disney.Infrastructure >= 1.0.0",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.23",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.13",
       "Microsoft.OpenApi >= 1.2.3",
       "Swashbuckle.AspNetCore.SwaggerGen >= 6.2.3",
@@ -6020,6 +6051,10 @@
             "target": "Package",
             "version": "[11.0.0, )"
           },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[3.1.23, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -6057,7 +6092,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.103/RuntimeIdentifierGraph.json"
       }
     }
   }

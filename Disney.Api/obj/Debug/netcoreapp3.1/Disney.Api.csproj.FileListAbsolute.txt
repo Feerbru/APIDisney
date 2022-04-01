@@ -75,3 +75,4 @@
 /Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Api/obj/Debug/netcoreapp3.1/Disney.Api.dll
 /Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Api/obj/Debug/netcoreapp3.1/Disney.Api.pdb
 /Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Api/obj/Debug/netcoreapp3.1/Disney.Api.genruntimeconfig.cache
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll

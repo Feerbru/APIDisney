@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using Disney.Core.DTOs;
 using Disney.Core.DTOs.CharacterDtos;
 using Disney.Core.Entities;
 using Disney.Core.Interfaces.Repository;
@@ -21,7 +20,7 @@ namespace Disney.Infrastructure.Services
         private readonly IStorage _storage;
         private readonly IMapper _mapper;
 
-        public CharacterService(ICharacterRepository repository ,IStorage storage, IMapper mapper)
+        public CharacterService(ICharacterRepository repository , IStorage storage, IMapper mapper)
         {
             _repository = repository;
             _storage = storage;
@@ -30,12 +29,11 @@ namespace Disney.Infrastructure.Services
         
         public async Task<IEnumerable<CharacterOutDto>> GetAll(CharacterQueryFilter filter)
         {
-            var entity = await _repository.GetAll();
-            var entityM = await _repository.GetAllInclude("Movies");
+            var entity = await _repository.GetAllInclude("Movies");
 
             if (filter.Name != null)
             {
-                entity = entity.Where(x => string.Equals(x.Name, filter.Name, StringComparison.CurrentCultureIgnoreCase));
+                entity = entity.Where(x => x.Name!.Contains(filter.Name, StringComparison.CurrentCultureIgnoreCase));
             }
 
             if (filter.Age != null)
@@ -46,13 +44,14 @@ namespace Disney.Infrastructure.Services
             if (filter.Weight != null)
             {
                 entity = entity?.Where(x => Equals(x.Weight, filter.Weight));
+                
             }
 
             if (filter.IdMovie != null)
             {
-                
+                entity = entity.Where(x => x.Movies.Any(m => string.Equals(m.Title, filter.IdMovie, StringComparison.CurrentCultureIgnoreCase)));
             }
-            
+
             return _mapper.Map<IEnumerable<CharacterOutDto>>(entity);
         }
         

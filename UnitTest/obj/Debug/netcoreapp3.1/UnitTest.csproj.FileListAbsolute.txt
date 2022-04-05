@@ -1,0 +1,5 @@
+/Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.csproj.AssemblyReference.cache
+/Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.AssemblyInfoInputs.cache
+/Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.AssemblyInfo.cs
+/Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.csproj.CoreCompileInputs.cache

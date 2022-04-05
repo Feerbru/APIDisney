@@ -1,17 +1,25 @@
 ﻿<Properties StartupConfiguration="{74C68C31-3628-4B3E-968C-5CC90D2DAD99}|Default">
   <MonoDevelop.Ide.ItemProperties.Disney.Api FirstBuild="True" PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.ItemProperties.Disney.Infrastructure FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UnitTest/IntegrationTests/UnitTest1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Disney.Api/Controllers/AuthController.cs">
     <Files>
       <File FileName="UnitTest/UnitTest1.cs" Line="1" Column="1" />
       <File FileName="UnitTest/IntegrationTests/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="Disney.Api/Controllers/AuthController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Option id="ShowAllFiles" value="True" />
           <Node name="Disney" expanded="True">
-            <Node name="Test" expanded="True" />
+            <Node name="Test" expanded="True">
+              <Node name="IntegrationTests" expanded="True" />
+            </Node>
+            <Node name="Disney.Api" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="AuthController.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>

@@ -93,9 +93,6 @@ namespace Disney.Infrastructure.Migrations
                     b.Property<DateTime>("CreatingDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("GenderId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
@@ -109,8 +106,6 @@ namespace Disney.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("GenderId");
-
                     b.ToTable("Movie");
                 });
 
@@ -121,20 +116,12 @@ namespace Disney.Infrastructure.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<bool>("Active")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime>("DischargeDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("PasswordHash")
                         .HasColumnType("varbinary(max)");
@@ -142,9 +129,31 @@ namespace Disney.Infrastructure.Migrations
                     b.Property<byte[]>("PasswordSalt")
                         .HasColumnType("varbinary(max)");
 
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("User");
+                });
+
+            modelBuilder.Entity("GenderMovie", b =>
+                {
+                    b.Property<int>("GendersId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MoviesId")
+                        .HasColumnType("int");
+
+                    b.HasKey("GendersId", "MoviesId");
+
+                    b.HasIndex("MoviesId");
+
+                    b.ToTable("GenderMovie");
                 });
 
             modelBuilder.Entity("CharacterMovie", b =>
@@ -162,15 +171,19 @@ namespace Disney.Infrastructure.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Disney.Core.Entities.Movie", b =>
+            modelBuilder.Entity("GenderMovie", b =>
                 {
-                    b.HasOne("Disney.Core.Entities.Gender", "Gender")
+                    b.HasOne("Disney.Core.Entities.Gender", null)
                         .WithMany()
-                        .HasForeignKey("GenderId")
+                        .HasForeignKey("GendersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Gender");
+                    b.HasOne("Disney.Core.Entities.Movie", null)
+                        .WithMany()
+                        .HasForeignKey("MoviesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

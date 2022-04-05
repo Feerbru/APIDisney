@@ -1,6 +1,6 @@
-namespace Disney.Core.DTOs
+namespace Disney.Core.DTOs.CharacterDtos
 {
-    public class CharacterDTO
+    public class CharacterOutDto
     {
         public string Name { get; set; }
 

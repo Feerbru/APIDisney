@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aX3cSs0fzZxwo2aduLnWs53qCiE2ew/EtDlaXnRf3UlVROrJfifoez3oYnzqzf7CE0IHNgo8s18DGspWhdKo1A==",
+  "dgSpecHash": "yNAanM4c6zgKWfZargQfMX1i8RKQ2pF/F93pK8n4KuTB4iFTce2K1XK1UZC0XOj6P3HXsorw4LeHTCf4hHRgfw==",
   "success": true,
   "projectFilePath": "/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/Disney.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.2/microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.http/2.1.0/microsoft.extensions.http.2.1.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.objectpool/2.2.0/microsoft.extensions.objectpool.2.2.0.nupkg.sha512",
@@ -47,6 +48,9 @@
     "/Users/fernandobruzzo/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/runtime.native.system/4.3.0/runtime.native.system.4.3.0.nupkg.sha512",
+    "/Users/fernandobruzzo/.nuget/packages/sendgrid/9.24.3/sendgrid.9.24.3.nupkg.sha512",
+    "/Users/fernandobruzzo/.nuget/packages/sendgrid.extensions.dependencyinjection/1.0.1/sendgrid.extensions.dependencyinjection.1.0.1.nupkg.sha512",
+    "/Users/fernandobruzzo/.nuget/packages/starkbank-ecdsa/1.3.1/starkbank-ecdsa.1.3.1.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/system.buffers/4.5.0/system.buffers.4.5.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/system.collections.concurrent/4.3.0/system.collections.concurrent.4.3.0.nupkg.sha512",

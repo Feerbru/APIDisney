@@ -8,6 +8,6 @@ namespace Disney.Core.QueryFilters
 
         public double? Weight { get; set; }
 
-        public int? IdMovie { get; set; }
+        public string IdMovie { get; set; }
     }
 }

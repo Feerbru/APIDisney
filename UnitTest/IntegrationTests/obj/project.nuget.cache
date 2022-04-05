@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/sYJD/Ada8kFyBovkgOaDpHFOTjB2+jMIBLkDrwai55qQkFpx6MoNwLOmaYWEy2hDRuRFAMi1kcAtzHwDofx4w==",
+  "dgSpecHash": "ZnUH8p82o39wMXlUw1y25R05iYpb6MNctXNbvQZZeboqj2QkyI4aYQyu+DwVQLyX87GzLy2lk4BHtK+FhAfnFA==",
   "success": true,
   "projectFilePath": "/Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/IntegrationTests/IntegrationTests.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,8 @@
     "/Users/fernandobruzzo/.nuget/packages/microsoft.testplatform.testhost/16.5.0/microsoft.testplatform.testhost.16.5.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/nuget.frameworks/5.0.0/nuget.frameworks.5.0.0.nupkg.sha512",
+    "/Users/fernandobruzzo/.nuget/packages/sendgrid/9.27.0/sendgrid.9.27.0.nupkg.sha512",
+    "/Users/fernandobruzzo/.nuget/packages/starkbank-ecdsa/1.3.3/starkbank-ecdsa.1.3.3.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/system.collections/4.0.11/system.collections.4.0.11.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/system.diagnostics.debug/4.0.11/system.diagnostics.debug.4.0.11.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/system.diagnostics.tools/4.0.1/system.diagnostics.tools.4.0.1.nupkg.sha512",

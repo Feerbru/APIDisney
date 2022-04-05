@@ -1,3 +1,8 @@
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.csproj.AssemblyReference.cache
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.AssemblyInfoInputs.cache
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.AssemblyInfo.cs
+/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.csproj.CoreCompileInputs.cache
 /Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/bin/Debug/netcoreapp3.1/Disney.Infrastructure.deps.json
 /Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/bin/Debug/netcoreapp3.1/Disney.Infrastructure.runtimeconfig.json
 /Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/bin/Debug/netcoreapp3.1/Disney.Infrastructure.runtimeconfig.dev.json
@@ -5,11 +10,6 @@
 /Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/bin/Debug/netcoreapp3.1/Disney.Infrastructure.pdb
 /Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/bin/Debug/netcoreapp3.1/Disney.Core.dll
 /Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/bin/Debug/netcoreapp3.1/Disney.Core.pdb
-/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.csproj.AssemblyReference.cache
-/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.AssemblyInfoInputs.cache
-/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.AssemblyInfo.cs
-/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.csproj.CoreCompileInputs.cache
 /Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.csproj.CopyComplete
 /Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.dll
 /Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Infrastructure/obj/Debug/netcoreapp3.1/Disney.Infrastructure.pdb

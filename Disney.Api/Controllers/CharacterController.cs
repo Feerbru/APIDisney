@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Disney.Core.DTOs;
 using Disney.Core.DTOs.CharacterDtos;
+using Disney.Core.Entities;
 using Disney.Core.QueryFilters;
 using Disney.Infrastructure.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;

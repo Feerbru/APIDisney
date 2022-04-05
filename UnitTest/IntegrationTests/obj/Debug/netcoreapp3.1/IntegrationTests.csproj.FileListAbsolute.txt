@@ -17,6 +17,8 @@
 /Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/IntegrationTests/bin/Debug/netcoreapp3.1/testhost.dll
 /Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/IntegrationTests/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/IntegrationTests/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
+/Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/IntegrationTests/bin/Debug/netcoreapp3.1/SendGrid.dll
+/Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/IntegrationTests/bin/Debug/netcoreapp3.1/StarkbankEcdsa.dll
 /Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/IntegrationTests/bin/Debug/netcoreapp3.1/xunit.abstractions.dll
 /Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/IntegrationTests/bin/Debug/netcoreapp3.1/xunit.assert.dll
 /Users/fernandobruzzo/Desktop/RestFul/Disney/UnitTest/IntegrationTests/bin/Debug/netcoreapp3.1/xunit.core.dll

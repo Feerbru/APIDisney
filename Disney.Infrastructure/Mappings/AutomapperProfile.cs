@@ -1,6 +1,7 @@
 using AutoMapper;
 using Disney.Core.DTOs.CharacterDtos;
 using Disney.Core.DTOs.MovieDtos;
+using Disney.Core.DTOs.UserDto;
 using Disney.Core.Entities;
 
 namespace Disney.Infrastructure.Mappings
@@ -33,9 +34,18 @@ namespace Disney.Infrastructure.Mappings
                     options => options.Ignore());
             CreateMap<Movie, MovieOutDto>()
                 .ReverseMap();
-            CreateMap<MovieDto, Movie>()
-                .ReverseMap();
             CreateMap<MovieOutDto, CreationMovieDto>();
+            
+            //User
+            CreateMap<User, UserDto>()
+                .ReverseMap()
+                .ForMember(x => x.Password, 
+                    options => options.Ignore());
+            
+            CreateMap<User, UserLogin>()
+                .ReverseMap()
+                .ForMember(x => x.Password, 
+                    options => options.Ignore());
         }
     }
 }

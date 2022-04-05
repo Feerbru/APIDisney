@@ -1,26 +1,24 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using Disney.Core.Enumerations;
 
 namespace Disney.Core.Entities
 {
     public class User : BaseEntity
     {
         [Required]
-        [StringLength(50)]
-        public string Name { get; set; }
-
         public string Username { get; set; }
 
+        public string Password { get; set; }
+
         [Required]
-        [EmailAddress]
+        [EmailAddress(ErrorMessage = "Ingresar un correo valido!")]
         public string Email { get; set; }
         
-        public DateTime DischargeDate { get; set; }
-
-        public bool Active { get; set; }
-
+        public RoleType Role { get; set; }
+        
         public byte[] PasswordHash { get; set; }
-
+        
         public byte[] PasswordSalt { get; set; }
     }
 }

@@ -2,10 +2,12 @@ using System.Threading.Tasks;
 using Disney.Core.DTOs.MovieDtos;
 using Disney.Core.QueryFilters;
 using Disney.Infrastructure.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Disney.Api.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     

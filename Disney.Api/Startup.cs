@@ -20,6 +20,8 @@ namespace Disney.Api
         }
 
         public IConfiguration Configuration { get; }
+        
+        //public IConfigurationRoot ConfigurationRoot { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -49,7 +51,8 @@ namespace Disney.Api
                     }
                 });
             });
-            /*
+            
+            //JWT
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -62,11 +65,16 @@ namespace Disney.Api
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    ValidIssuer = Configuration["Authentication : Issuer"],
+                    ValidIssuer = Configuration["Authentication:Issuer"],
                     ValidAudience = Configuration["Authentication:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Authentication: SecretKey"]))
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Authentication:SecretKey"]))
                 };
-            });*/
+            });
+            
+            //SENDGRID
+            services.AddMvc();
+            //services.AddSingleton<IConfiguration>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -82,10 +90,10 @@ namespace Disney.Api
             app.UseRouting();
 
             app.UseStaticFiles();
+            
+            app.UseAuthentication();
 
             app.UseAuthorization();
-
-            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d8mZbpfZGr+lw++li7YhRNPbh9tLcGIrwuaKSzigxUzbJQ9jeAcocBBb9GHfR5y5VcriBf7/sUoGEqCs+IidXg==",
+  "dgSpecHash": "WzBGVI5zEdHF4c6ZxltUcJ+juvZBdRp4eQrqp2/zXRJXfTMiGTmeEG5k+T8I6RpNSkTWKVZqALQzaIjiHuxVqw==",
   "success": true,
   "projectFilePath": "/Users/fernandobruzzo/Desktop/RestFul/Disney/Disney.Api/Disney.Api.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.2/microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.http/2.1.0/microsoft.extensions.http.2.1.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/microsoft.extensions.objectpool/2.2.0/microsoft.extensions.objectpool.2.2.0.nupkg.sha512",
@@ -48,6 +49,9 @@
     "/Users/fernandobruzzo/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/runtime.native.system/4.3.0/runtime.native.system.4.3.0.nupkg.sha512",
+    "/Users/fernandobruzzo/.nuget/packages/sendgrid/9.27.0/sendgrid.9.27.0.nupkg.sha512",
+    "/Users/fernandobruzzo/.nuget/packages/sendgrid.extensions.dependencyinjection/1.0.1/sendgrid.extensions.dependencyinjection.1.0.1.nupkg.sha512",
+    "/Users/fernandobruzzo/.nuget/packages/starkbank-ecdsa/1.3.3/starkbank-ecdsa.1.3.3.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "/Users/fernandobruzzo/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
